@@ -1,0 +1,5 @@
+@mixin justify-content($para){
+	justify-content: $para;
+	-webkit-justify-content: $para;
+	-moz-justify-content: $para;
+}

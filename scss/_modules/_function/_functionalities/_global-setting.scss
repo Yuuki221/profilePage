@@ -1,0 +1,62 @@
+@import "../../_static/colors";
+@import "../../_static/fonts";
+@import "../_basic-functions/global-clear";
+@import "../_basic-functions/display-flex";
+@import "../_basic-functions/flex-direction";
+@import "../_basic-functions/align-items";
+@import "../_basic-functions/flex-shrink";
+@import "../_basic-functions/border-box";
+
+@mixin global-setting {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	// clear default settings 
+	@include global-clear;
+}
+
+html, body {
+	height: 100%;
+	// body looks to its parents for how dynamically set the height 
+	// strip the white space when window size is abnormal 
+}
+
+body {
+	line-height: 1;
+}
+
+main, section, article, div, header, footer, nav, #whole-stuff {
+	// set the property for all block element 
+	// display: flex;
+	@include display-flex;
+	// flex-direction: columns;
+	@include flex-direction(column);
+	//align-items: stretch;
+	@include align-items(stretch);
+	//flex-shrink: 1;
+	@include flex-shrink(0);
+	@include border-box;
+	font-family: $main-font;
+	border: 0 solid $border-black;
+
+	position: relative;
+	padding: 0;
+}
+
+#whole-stuff {
+	height: 100%;
+	z-index: 0;
+}
+
+body, button, input, textarea {
+	font-family: $main-font;
+}
+
+a, a:visited {
+	color: $link-grey;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: outside none none;
+}
+
+}

@@ -1,0 +1,7 @@
+// scss building configuration should be at scss folder 
+@import "./_modules/_function/_functionalities/global-setting";
+@import "./_modules/_partials/top-header";
+@import "./_modules/_static/logo-mark";
+@include global-setting;
+@include top-header;
+@include logo-stuff;

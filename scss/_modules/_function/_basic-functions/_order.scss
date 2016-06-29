@@ -1,0 +1,5 @@
+@mixin flex-order ($order){
+	order: $order;
+	-webkit-order: $order;
+	-moz-order: $order;
+}

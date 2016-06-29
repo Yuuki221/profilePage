@@ -1,0 +1,8 @@
+@mixin settings-item-link {
+	.settings-item-link {
+		display: block;
+		overflow: hidden;//use to process the text include 
+		text-indent: 110%; // move text after the image 
+		white-space: nowrap;
+	}
+}

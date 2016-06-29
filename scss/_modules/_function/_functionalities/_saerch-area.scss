@@ -1,0 +1,74 @@
+@import "../_basic-functions/align-content";
+@import "../_basic-functions/align-items";
+@import "../_basic-functions/justify-content";
+@import "../_basic-functions/flex-shrink";
+@import "../_basic-functions/flex-grow";
+@import "../_basic-functions/display-flex";
+@import "../_basic-functions/border-box";
+@import "../_basic-functions/border-radius";
+@import "../../_static/colors";
+@import "../_basic-functions/border-radius";
+
+@mixin search-area {
+.search-box {
+	outline: medium none; 
+	// outline width, color; used for an outline outside the border
+	padding: 3px 10px 3px 26px;
+	z-index: 2;
+	font-size: 14px;
+
+	&::-moz-placeholder, &:focus::-moz-placeholder,
+	&::-webkit-input-placeholder, &:focus::-webkit-input-placeholder,
+	&::-moz-placeholder, &:focus::-moz-placeholder{
+		color: $black-font;
+		font-weight: 300;
+		opacity: 1;
+		// need to fix the prefix later 
+	}
+}
+
+.upper-search-box{
+		cursor: text;
+		background: $background-light-grey none repeat scroll 0 0;
+		left:0;
+		top: 0;
+		padding: 7px;
+		position: absolute;
+		text-align: center;
+		border: 1px solid $lighter-border;
+		.inner-icon-text {
+			display: inline;
+			left: -5px;
+			.search-icon, .search-text {
+				display: inline-block;
+			}
+			.search-icon {
+				margin-right: 6px;
+				vertical-align: baseline; 
+				// only works for inline block
+			}
+			.search-text {
+				max-width: 140px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				vertical-align: bottom; 
+				// let image align with text bottom 
+				// default is baseline 
+				white-space: nowrap; 
+				// white space shrink and the text will never wrap
+			}
+		}
+	}
+
+	.search-box, .upper-search-box {
+		@include border-radius(3px);
+		color: $grey-font;
+		z-index: 2; 
+		@include border-box;
+		height: 100%;
+		width: 100%;
+		border: 1px solid $lighter-border;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}

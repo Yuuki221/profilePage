@@ -1,0 +1,4 @@
+@mixin align-items($para){
+	-webkit-align-items: $para;
+	align-items: $para;
+}

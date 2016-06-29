@@ -1,0 +1,123 @@
+@import "../_static/colors";
+@import "../_static/fonts";
+
+@import "../_function/_basic-functions/order";
+@import "../_function/_basic-functions/flex-direction";
+@import "../_function/_basic-functions/flex-shrink";
+@import "../_function/_basic-functions/align-content";
+@import "../_function/_basic-functions/align-items";
+@import "../_function/_basic-functions/justify-content";
+@import "../_function/_basic-functions/flex-grow";
+@import "../_function/_basic-functions/display-flex";
+
+@import "../_function/_functionalities/saerch-area";
+@import "../_function/_functionalities/settings-item";
+@mixin top-header {
+.top-header-global {
+	border-bottom: 1px solid $lighter-border;
+	@include flex-order(1);
+	padding: 0 20px;
+	.top-header-outter{
+		height: 75px;
+		// the box inside padding above
+		.top-header-inner {
+			height: 77px;
+			padding: 26px 40px;
+			// outter inner there is a thin square contain
+			// search and other icons 
+			@include flex-direction(row);
+			// flex the elements there horizontally 
+			margin: 0 auto; // put in the center of outter 
+			max-width: 1010px;
+			width: 100%;
+			.logo-setting {
+				position: relative;
+				@include flex-shrink(0);
+				left: -3px;
+				margin-top: -4px;
+			}
+			@include settings-item-link;
+
+			.search-to-settings{
+				@include display-flex;
+				@include align-content(center);
+				@include align-items(center);
+				// above two put the content center vertically 
+				@include justify-content(flex-end);
+				// push items to the right of the topbar
+				@include flex-shrink(1); 
+				@include flex-grow(1);
+				// make sure that the size of the bar not change? 
+				width:0;
+				@include search-area;
+				.search-position {
+					margin-left: -210px;
+					min-width: 215px;
+					height: 28px;
+					position: absolute;
+					top: 0; // only works for absolute positon item 
+					left: 50%;
+					//@include search-area;
+				}
+				.settings-position {
+					@include display-flex;
+					@include flex-direction(row);
+					@include settings-item-link;
+				}
+			}
+
+		}
+	}
+}
+}
+
+// .top-header-outter{
+// 	height: 75px;
+// 	// the box inside padding above
+// }
+
+// .top-header-inner {
+// 	height: 77px;
+// 	padding: 26px 40px;
+// 	// outter inner there is a thin square contain
+// 	// search and other icons 
+// 	@include flex-direction(row);
+// 	// flex the elements there horizontally 
+// 	margin: 0 auto; // put in the center of outter 
+// 	max-width: 1010px;
+// 	width: 100%;
+// }
+
+// .logo-setting {
+// 	position: relative;
+// 	@include flex-shrink(0);
+// 	left: -3px;
+// 	margin-top: -4px;
+// }
+
+// .search-to-settings{
+// 	@include display-flex;
+// 	@include align-content(center);
+// 	@include align-items(center);
+// 	// above two put the content center vertically 
+// 	@include justify-content(flex-end);
+// 	// push items to the right of the topbar
+// 	@include flex-shrink(1); 
+// 	@include flex-grow(1);
+// 	// make sure that the size of the bar not change? 
+// 	width:0;
+// 	.search-position {
+// 		margin-left: -210px;
+// 		min-width: 215px;
+// 		height: 28px;
+// 		position: absolute;
+// 		top: 0; // only works for absolute positon item 
+// 		left: 50%;
+// 	}
+// 	.settings-position {
+// 		@include display-flex;
+// 		@include flex-direction(row);
+// 	}
+// }
+
+

@@ -1,0 +1,5 @@
+@mixin flex-shrink($scale){
+	-webkit-flex-shrink: $scale;
+	-moz-flex-shrink: $scale;
+	flex-shrink: $scale;
+}

@@ -1,0 +1,5 @@
+@mixin flex-grow($para){
+	-webkit-flex-grow: $para;
+	-moz-flex-grow: $para;
+	flex-grow: $para;
+}

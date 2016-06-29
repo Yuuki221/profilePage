@@ -1,0 +1,5 @@
+@mixin align-content($para){
+	// like justify content but it is used as a vertical thing 
+	align-content: $para;
+	-webkit-align-content: $para;
+}
