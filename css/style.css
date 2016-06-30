@@ -271,4 +271,135 @@ footer {
         position: absolute;
         top: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000314}}
+header {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-color: #efefef;
+  border-bottom-width: 1px;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000325}}
+  header .avatar-block {
+    margin-right: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_avatar-setting\.scss}line{font-family:\000035}}
+    header .avatar-block img {
+      height: 77px;
+      margin-bottom: -6px;
+      margin-top: -6px;
+      width: 77px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fafafa;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000330}}
+  header .profile-description {
+    flex-basis: 30px;
+    -webkit-flex-basis: 30px;
+    -moz-flex-basis: 30px;
+    -webkit-flex-grow: 2;
+    -moz-flex-grow: 2;
+    flex-grow: 2;
+    color: #262626;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    flex-shrink: 1;
+    min-width: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000337}}
+    header .profile-description .title-follow {
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-shrink: 1;
+      -moz-flex-shrink: 1;
+      flex-shrink: 1;
+      min-width: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000342}}
+      header .profile-description .title-follow .title {
+        font-size: 21px;
+        font-weight: 300;
+        overflow: hidden;
+        white-space: nowrap;
+        -webkit-flex-shrink: 1;
+        -moz-flex-shrink: 1;
+        flex-shrink: 1;
+        min-width: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000355}}
+      header .profile-description .title-follow .follow-me-wrap {
+        margin-left: 20px;
+        -webkit-flex-shrink: 0;
+        -moz-flex-shrink: 0;
+        flex-shrink: 0;
+        display: block;
+        position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000360}}
+        header .profile-description .title-follow .follow-me-wrap .follow-me-button {
+          font-size: 16px;
+          line-height: 29px;
+          padding: 0 11px;
+          cursor: pointer;
+          background: transparent none repeat scroll 0 0;
+          border-color: #3897f0;
+          color: #3897f0;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          border-style: solid;
+          border-width: 1px;
+          font-weight: 600;
+          outline: medium none;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000365}}
+      header .profile-description .title-follow .options {
+        background-color: transparent;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-flex-shrink: 0;
+        -moz-flex-shrink: 0;
+        flex-shrink: 0;
+        margin-left: 5px;
+        margin-right: -10px;
+        padding: 0;
+        display: block;
+        text-indent: 110%;
+        overflow: hidden;
+        white-space: nowrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000370}}
+    header .profile-description .intro-profile, header .profile-description .user-status {
+      font-size: 17px;
+      line-height: 24px;
+      margin-top: 14px;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_profile-header\.scss}line{font-family:\0000377}}
+    header .profile-description .user-status {
+      margin-top: 17px;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_user-stat\.scss}line{font-family:\000033}}
+      header .profile-description .user-status ul {
+        margin-top: 17px;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Desktop\/WebProject\/ProfilePage\/scss\/_modules\/_function\/_functionalities\/_user-stat\.scss}line{font-family:\000038}}
+        header .profile-description .user-status ul li {
+          margin-left: 0;
+          font-size: 17px;
+          margin-right: 40px; }
+
 /*# sourceMappingURL=style.css.map */

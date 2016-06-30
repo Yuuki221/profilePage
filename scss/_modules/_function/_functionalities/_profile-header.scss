@@ -1,0 +1,85 @@
+@import "../../_static/colors";
+@import "../../_static/fonts";
+@import "../_basic-functions/flex-direction";
+@import "../_basic-functions/flex-basis";
+@import "../_basic-functions/flex-grow";
+@import "../_basic-functions/flex-shrink";
+@import "../_basic-functions/align-items";
+@import "follow-button";
+@import "options-button";
+@import "user-stat";
+@import "avatar-setting";
+
+@mixin profile-header {
+	header {
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 30px;
+
+		padding-bottom: 30px;
+
+		border-bottom-color: $darker-border;
+		border-bottom-width: 1px;
+		@include flex-direction(row);
+
+		.avatar-block{
+			margin-right: 25px;
+			@include avatar-setting;
+		}
+
+	    .profile-description {
+			@include flex-basis(30px);
+			@include flex-grow(2);
+			color: $black-font;
+			@include flex-shrink(1);
+			min-width: 0; 
+			// when the window goes super small
+			.title-follow {
+				@include align-items(center);
+				@include flex-direction(row);
+				@include flex-shrink(1);
+				min-width: 0;
+				.title {
+					font-size: 21px;
+					font-weight: 300;
+					overflow: hidden;
+					white-space: nowrap;
+					// Ssequence of white space will collapse into a single space
+					// text will never wrap to the next line,
+					// the text continues on the same line until a 
+					// <br> tag is encountered 
+					@include flex-shrink(1);
+					min-width: 0;
+				}
+
+				.follow-me-wrap {
+					margin-left: 20px;
+					@include flex-shrink(0);
+					display: block;
+					position: relative;
+					.follow-me-button {
+						@include follow-button;
+					}
+				}
+
+				& .options{
+					@include options-button;
+				}
+			}
+
+			& .intro-profile, & .user-status {
+				font-size: 17px;
+				line-height: 24px;
+				margin-top: 14px;
+				display:block;
+			}
+
+			& .user-status {
+				margin-top: 17px;
+				display: flex;
+				@include flex-direction(row);
+				@include user-stat;
+			}	
+		}
+	}
+}

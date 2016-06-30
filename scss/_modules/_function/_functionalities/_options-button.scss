@@ -1,0 +1,14 @@
+@import "../_basic-functions/flex-shrink";
+@mixin options-button {
+	background-color: transparent;
+	border: 0 none;
+	cursor: pointer;
+	@include flex-shrink(0);
+	margin-left: 5px;
+	margin-right: -10px;
+	padding:0;
+	display: block;
+	text-indent: 110%;
+	overflow: hidden;
+	white-space: nowrap;
+}

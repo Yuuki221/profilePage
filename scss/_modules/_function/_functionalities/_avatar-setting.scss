@@ -1,0 +1,22 @@
+@import "../../_static/colors";
+@import "../_basic-functions/border-box";
+@import "../_basic-functions/border-radius";
+@mixin avatar-setting {
+	img {
+				height: 77px;
+				margin-bottom: -6px;
+				margin-top: -6px; 
+				// minus margin pull the image up 
+				width: 77px; // fix the width 
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				// center it horizontally in the div contain the image
+				background-color: $background-light-grey;
+				@include border-box;
+				@include border-radius(50%);
+				overflow: hidden;
+				position: relative; 
+
+	}
+}

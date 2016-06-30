@@ -1,0 +1,5 @@
+@mixin flex-basis ($para) {
+	flex-basis: $para;
+	-webkit-flex-basis: $para;
+	-moz-flex-basis: $para;
+}

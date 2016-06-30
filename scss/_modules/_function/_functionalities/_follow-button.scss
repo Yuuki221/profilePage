@@ -1,0 +1,21 @@
+@import "../../_static/colors";
+@import "../_basic-functions/border-radius";
+@mixin follow-button {
+	font-size: 16px;
+	line-height: 29px;
+	padding: 0 11px;
+	cursor: pointer;
+	background: rgba(0,0,0,0) none repeat scroll 0 0;
+	border-color: $light-blue;
+	color: $light-blue;
+
+	@include border-radius(3px);
+	border-style: solid;
+	border-width: 1px;
+	font-weight: 600;
+	outline: medium none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}

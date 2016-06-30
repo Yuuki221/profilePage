@@ -4,7 +4,10 @@
 @import "./_modules/_static/logo-mark";
 @import "./_modules/_partials/footer";
 
+@import "./_modules/_function/_functionalities/profile-header";
+
 @include global-setting;
 @include top-header;
 @include logo-stuff;
 @include footer;
+@include profile-header;
