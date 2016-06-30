@@ -2,6 +2,9 @@
 @import "./_modules/_function/_functionalities/global-setting";
 @import "./_modules/_partials/top-header";
 @import "./_modules/_static/logo-mark";
+@import "./_modules/_partials/footer";
+
 @include global-setting;
 @include top-header;
 @include logo-stuff;
+@include footer;
