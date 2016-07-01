@@ -1,0 +1,44 @@
+@import "../_basic-functions/flex-direction";
+@import "../_basic-functions/flex-shrink";
+@import "../../_static/colors";
+
+@mixin photo-gallery {
+	&:lastchild {
+		margin-bottom: 0;
+	}
+	.photo-row {
+		margin-bottom: 30px;
+		@include flex-direction(row);
+		&:lastchild {
+			margin-right: 0;
+		}
+		.each-photo {
+			margin-right: 30px;
+			@include flex-shrink(1);
+			display: block;
+			position: relative;
+			width: 100%;
+			color: $footer-blue;
+			text-decoration: none;
+			.photo-container {
+				background-color: $image-background-color;
+				display: block;
+				width: 100%;
+				.photo-contiainer-inner {
+					display: block;
+					overflow: hidden;
+					padding-bottom: 100%;
+					img{
+						left: 0;
+						position: absolute;
+						top: 0;
+						-moz-user-select: none;
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	
+}

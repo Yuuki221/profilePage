@@ -1,0 +1,44 @@
+@import "../../_static/colors";
+@import "../_basic-functions/border-radius";
+@import "../_basic-functions/border-box";
+@import "../_basic-functions/justify-content";
+@mixin load-button {
+	.load-button {
+		@include justify-content(center);
+		margin: 60px auto 0;
+		position: relative;
+		
+		&::before, & {
+			height: 120px;
+			width: 120px;
+			border-color: $light-blue;
+			color: $light-blue;
+		}
+		&::before{
+			@include border-radius(50%);
+			border-style: solid;
+			border-width: 2px;
+			@include border-box;
+			content:"";
+			// content property worked with 
+			// before and after pseudo elements 
+			// to append content 
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+
+		.load-button-link {
+			color: $light-blue;
+			font-weight: 600;
+			display: block;
+			font-size: 14px;
+			margin: -60px 0;
+			padding: 60px 9px;
+			position: relative;
+			text-align: center;
+			vertical-align: middle;
+			z-index: 1;
+		}
+	}
+}

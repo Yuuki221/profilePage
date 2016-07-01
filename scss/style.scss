@@ -3,11 +3,12 @@
 @import "./_modules/_partials/top-header";
 @import "./_modules/_static/logo-mark";
 @import "./_modules/_partials/footer";
-
-@import "./_modules/_function/_functionalities/profile-header";
+@import "./_modules/_partials/main-content";
+// @import "./_modules/_function/_functionalities/profile-header";
 
 @include global-setting;
 @include top-header;
 @include logo-stuff;
 @include footer;
-@include profile-header;
+//@include profile-header;
+@include main-content;

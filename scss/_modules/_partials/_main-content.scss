@@ -1,0 +1,34 @@
+@import "../_static/colors";
+@import "../_function/_basic-functions/flex-grow";
+@import "../_function/_basic-functions/order";
+@import "../_function/_functionalities/profile-header";
+@import "../_function/_functionalities/photo-gallery";
+@import "../_function/_functionalities/load-button";
+@import "../_function/_functionalities/profile-header";
+
+@mixin main-content{
+	.main-content {
+		@include profile-header;
+		
+		background-color: $background-light-grey;
+		@include flex-grow(1);
+		@include flex-order(3);
+
+		article {
+			box-sizing: content-box;
+			// defulat value for box-sizing, 
+			// the width and height properties (and min/max 
+			// properties) include only content, padding and border
+			// but not the margin 
+			padding: 40px 20px 0;
+			width: calc(100% - 40px);
+			@include flex-grow(1);
+			margin: 0 auto 30px;
+			max-width: 935px;
+
+			@include profile-header;
+			@include photo-gallery;
+			@include load-button;
+		}
+	}
+}
